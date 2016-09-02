@@ -1,0 +1,2457 @@
+[
+  {
+    "to": [
+      "YER156C",
+      "YFL002C",
+      "YGL148W",
+      "YGR103W",
+      "YGR128C",
+      "YGR195W",
+      "YGR285C",
+      "YHR143W-A"
+    ],
+    "from": "YIL127C"
+  },
+  {
+    "to": [
+      "YIL039W",
+      "YKR043C",
+      "YLR062C"
+    ],
+    "from": "YPL079W"
+  },
+  {
+    "to": ["YNR038W"],
+    "from": "YPR085C"
+  },
+  {
+    "to": [
+      "YJL104W",
+      "YJL180C"
+    ],
+    "from": "YKL195W"
+  },
+  {
+    "to": [
+      "YCL022C",
+      "YCL024W",
+      "YCL060C",
+      "YDL003W"
+    ],
+    "from": "YDR097C"
+  },
+  {
+    "to": ["YDR107C"],
+    "from": "YDR131C"
+  },
+  {
+    "to": ["YDR284C"],
+    "from": "YER119C"
+  },
+  {
+    "to": ["YDL085W"],
+    "from": "YDR096W"
+  },
+  {
+    "to": ["YLL026W"],
+    "from": "YLR216C"
+  },
+  {
+    "to": ["YGL021W"],
+    "from": "YGR108W"
+  },
+  {
+    "to": [
+      "YER109C",
+      "YER156C",
+      "YGL148W",
+      "YJR029W",
+      "YKL024C",
+      "YLL027W",
+      "YLR104W",
+      "YLR175W",
+      "YLR350W",
+      "YMR300C",
+      "YNL163C",
+      "YOR261C",
+      "YOR300W",
+      "YOR330C",
+      "YPL048W",
+      "YPL266W",
+      "YPR033C"
+    ],
+    "from": "YPR062W"
+  },
+  {
+    "to": [
+      "YDR009W",
+      "YGL012W",
+      "YGL202W"
+    ],
+    "from": "YGL249W"
+  },
+  {
+    "to": [
+      "YDL003W",
+      "YDR097C"
+    ],
+    "from": "YLL002W"
+  },
+  {
+    "to": [
+      "YHR203C",
+      "YLR061W"
+    ],
+    "from": "YOR259C"
+  },
+  {
+    "to": ["YER020W"],
+    "from": "YGR174C"
+  },
+  {
+    "to": ["YGL197W"],
+    "from": "YLR213C"
+  },
+  {
+    "to": [
+      "YDR396W",
+      "YER148W",
+      "YGL164C",
+      "YGR173W",
+      "YHR006W",
+      "YJL148W",
+      "YKL122C"
+    ],
+    "from": "YKL172W"
+  },
+  {
+    "to": [
+      "YGR190C",
+      "YJR129C"
+    ],
+    "from": "YKL056C"
+  },
+  {
+    "to": ["YMR300C"],
+    "from": "YNL261W"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGR095C",
+      "YGR128C",
+      "YGR265W",
+      "YKR072C",
+      "YLR009W",
+      "YLR138W",
+      "YLR397C",
+      "YOL077C",
+      "YOL097C",
+      "YOR261C",
+      "YOR277C"
+    ],
+    "from": "YPR110C"
+  },
+  {
+    "to": [
+      "YGR151C",
+      "YGR152C",
+      "YJR148W",
+      "YKR013W",
+      "YLL002W",
+      "YLL022C",
+      "YOL007C",
+      "YOL017W",
+      "YOL019W"
+    ],
+    "from": "YOL090W"
+  },
+  {
+    "to": ["YNL091W"],
+    "from": "YPR130C"
+  },
+  {
+    "to": [
+      "YGL102C",
+      "YIL039W",
+      "YJR029W"
+    ],
+    "from": "YKR043C"
+  },
+  {
+    "to": [
+      "YJR148W",
+      "YKR013W",
+      "YLL002W"
+    ],
+    "from": "YLL022C"
+  },
+  {
+    "to": [
+      "YLR420W",
+      "YMR267W"
+    ],
+    "from": "YPL096W"
+  },
+  {
+    "to": ["YDR447C"],
+    "from": "YLR441C"
+  },
+  {
+    "to": [
+      "YER016W",
+      "YFL038C"
+    ],
+    "from": "YHL034C"
+  },
+  {
+    "to": ["YBR054W"],
+    "from": "YBR092C"
+  },
+  {
+    "to": [
+      "YGR103W",
+      "YGR128C"
+    ],
+    "from": "YGR285C"
+  },
+  {
+    "to": [
+      "YGR193C",
+      "YLL009C"
+    ],
+    "from": "YOR042W"
+  },
+  {
+    "to": [
+      "YGR041W",
+      "YKR077W"
+    ],
+    "from": "YNR067C"
+  },
+  {
+    "to": ["YJL167W"],
+    "from": "YLR257W"
+  },
+  {
+    "to": [
+      "YDL043C",
+      "YDR054C",
+      "YIL035C",
+      "YMR213W",
+      "YMR267W",
+      "YPL096W",
+      "YPR125W"
+    ],
+    "from": "YPR173C"
+  },
+  {
+    "to": [
+      "YER148W",
+      "YFR037C",
+      "YGR002C",
+      "YLR221C",
+      "YLR330W",
+      "YLR449W",
+      "YML074C",
+      "YMR044W",
+      "YOL041C",
+      "YOR106W"
+    ],
+    "from": "YPR086W"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGL120C",
+      "YGR103W",
+      "YGR128C",
+      "YGR265W",
+      "YHR069C",
+      "YIL039W",
+      "YIL127C",
+      "YJL033W",
+      "YKR072C",
+      "YLR175W",
+      "YLR276C",
+      "YML008C",
+      "YNR046W",
+      "YOL077C"
+    ],
+    "from": "YOR169C"
+  },
+  {
+    "to": [
+      "YCL045C",
+      "YDR382W",
+      "YIL120W",
+      "YKR059W",
+      "YKR097W",
+      "YML106W"
+    ],
+    "from": "YNL101W"
+  },
+  {
+    "to": [
+      "YDR228C",
+      "YFR037C",
+      "YJL014W",
+      "YLR330W"
+    ],
+    "from": "YOR106W"
+  },
+  {
+    "to": ["YKR016W"],
+    "from": "YPL210C"
+  },
+  {
+    "to": [
+      "YGR285C",
+      "YIR023W",
+      "YJL175W"
+    ],
+    "from": "YKL032C"
+  },
+  {
+    "to": [
+      "YBR180W",
+      "YDR455C",
+      "YDR504C",
+      "YGL226C-A"
+    ],
+    "from": "YIR019C"
+  },
+  {
+    "to": [
+      "YEL043W",
+      "YFR057W",
+      "YHR145C"
+    ],
+    "from": "YPL058C"
+  },
+  {
+    "to": [
+      "YCR052W",
+      "YHR006W",
+      "YKL047W",
+      "YOR330C",
+      "YPL266W"
+    ],
+    "from": "YPR087W"
+  },
+  {
+    "to": [
+      "YCR036W",
+      "YDL120W",
+      "YFR037C",
+      "YJL014W",
+      "YKL012W",
+      "YKR047W",
+      "YLR221C",
+      "YLR330W",
+      "YLR449W",
+      "YML015C",
+      "YML063W",
+      "YML074C",
+      "YOL041C",
+      "YOL106W",
+      "YOR106W",
+      "YOR182C",
+      "YPR086W",
+      "YPR087W"
+    ],
+    "from": "YPR088C"
+  },
+  {
+    "to": ["YBR190W"],
+    "from": "YBR208C"
+  },
+  {
+    "to": [
+      "YKL045W",
+      "YLL002W"
+    ],
+    "from": "YLR183C"
+  },
+  {
+    "to": ["YEL075C"],
+    "from": "YEL077C"
+  },
+  {
+    "to": [
+      "YGL049C",
+      "YKR047W"
+    ],
+    "from": "YKR048C"
+  },
+  {
+    "to": [
+      "YIL084C",
+      "YJL080C",
+      "YKL024C"
+    ],
+    "from": "YLL027W"
+  },
+  {
+    "to": ["YML015C"],
+    "from": "YOL097C"
+  },
+  {
+    "to": ["YGR173W"],
+    "from": "YHR006W"
+  },
+  {
+    "to": ["YLR251W"],
+    "from": "YMR040W"
+  },
+  {
+    "to": [
+      "YDR280W",
+      "YEL062W",
+      "YIL039W",
+      "YKR043C",
+      "YLL034C",
+      "YLL037W"
+    ],
+    "from": "YMR080C"
+  },
+  {
+    "to": ["YLL008W"],
+    "from": "YPR136C"
+  },
+  {
+    "to": [
+      "YCL020W",
+      "YCL021W",
+      "YEL043W"
+    ],
+    "from": "YHR145C"
+  },
+  {
+    "to": ["YDR054C"],
+    "from": "YER099C"
+  },
+  {
+    "to": ["YGR128C"],
+    "from": "YGR265W"
+  },
+  {
+    "to": [
+      "YCL059C",
+      "YDL001W"
+    ],
+    "from": "YDR429C"
+  },
+  {
+    "to": [
+      "YDL042C",
+      "YGR195W",
+      "YHR006W",
+      "YJR029W",
+      "YKL075C",
+      "YLL011W",
+      "YLL034C",
+      "YNL163C",
+      "YNL207W",
+      "YNL261W",
+      "YPL048W"
+    ],
+    "from": "YPL266W"
+  },
+  {
+    "to": ["YLR088W"],
+    "from": "YLR444C"
+  },
+  {
+    "to": ["YML015C"],
+    "from": "YNL041C"
+  },
+  {
+    "to": [
+      "YGR220C",
+      "YIL093C"
+    ],
+    "from": "YJL063C"
+  },
+  {
+    "to": ["YFL039C"],
+    "from": "YHR025W"
+  },
+  {
+    "to": [
+      "YDR087C",
+      "YER148W",
+      "YFR037C",
+      "YGR114C",
+      "YIL127C",
+      "YJL014W",
+      "YJL033W",
+      "YJL148W",
+      "YKL172W",
+      "YLR197W",
+      "YLR221C",
+      "YLR276C",
+      "YLR330W"
+    ],
+    "from": "YLR449W"
+  },
+  {
+    "to": [
+      "YGR173W",
+      "YIL035C",
+      "YKL172W",
+      "YKR047W"
+    ],
+    "from": "YLR420W"
+  },
+  {
+    "to": ["YOL056W"],
+    "from": "YOR061W"
+  },
+  {
+    "to": [
+      "YKR047W",
+      "YKR072C",
+      "YLR276C"
+    ],
+    "from": "YML015C"
+  },
+  {
+    "to": [
+      "YFL038C",
+      "YGL105W",
+      "YGL106W"
+    ],
+    "from": "YHR121W"
+  },
+  {
+    "to": [
+      "YKL074C",
+      "YLR276C",
+      "YOR328W"
+    ],
+    "from": "YPR112C"
+  },
+  {
+    "to": ["YMR116C"],
+    "from": "YPL076W"
+  },
+  {
+    "to": ["YIL033C"],
+    "from": "YOL094C"
+  },
+  {
+    "to": ["YER148W"],
+    "from": "YGL164C"
+  },
+  {
+    "to": ["YEL032W"],
+    "from": "YHR005C"
+  },
+  {
+    "to": ["YJR045C"],
+    "from": "YLL026W"
+  },
+  {
+    "to": ["YEL065W"],
+    "from": "YGL008C"
+  },
+  {
+    "to": [
+      "YFR037C",
+      "YJL014W"
+    ],
+    "from": "YLR330W"
+  },
+  {
+    "to": ["YJL125C"],
+    "from": "YKL078W"
+  },
+  {
+    "to": [
+      "YIL084C",
+      "YKL024C",
+      "YKL052C",
+      "YKL120W",
+      "YLL027W",
+      "YOL088C",
+      "YOR330C"
+    ],
+    "from": "YOR332W"
+  },
+  {
+    "to": ["YLR339C"],
+    "from": "YML022W"
+  },
+  {
+    "to": ["YDL032W"],
+    "from": "YDL056W"
+  },
+  {
+    "to": [
+      "YDR163W",
+      "YEL051W"
+    ],
+    "from": "YFL038C"
+  },
+  {
+    "to": [
+      "YFL038C",
+      "YGL106W",
+      "YGR167W"
+    ],
+    "from": "YJL104W"
+  },
+  {
+    "to": [
+      "YFL038C",
+      "YGL106W",
+      "YJL104W",
+      "YJR014W",
+      "YKR035C"
+    ],
+    "from": "YLR025W"
+  },
+  {
+    "to": [
+      "YJL014W",
+      "YKR072C",
+      "YLR449W"
+    ],
+    "from": "YML063W"
+  },
+  {
+    "to": [
+      "YBR287W",
+      "YEL027W",
+      "YEL034W"
+    ],
+    "from": "YFL039C"
+  },
+  {
+    "to": ["YPL105C"],
+    "from": "YPL112C"
+  },
+  {
+    "to": [
+      "YJL033W",
+      "YJR002W",
+      "YLR009W",
+      "YMR128W",
+      "YNL027W",
+      "YOL077C",
+      "YOL079W"
+    ],
+    "from": "YOR206W"
+  },
+  {
+    "to": [
+      "YGL102C",
+      "YIL039W",
+      "YJR029W",
+      "YKR043C"
+    ],
+    "from": "YLR024C"
+  },
+  {
+    "to": [
+      "YHR006W",
+      "YKL052C",
+      "YKL120W",
+      "YLL027W",
+      "YOL056W",
+      "YOL088C"
+    ],
+    "from": "YOR330C"
+  },
+  {
+    "to": [
+      "YCL024W",
+      "YCL060C",
+      "YDL003W",
+      "YDR097C",
+      "YJL115W",
+      "YKL045W",
+      "YLL002W",
+      "YLR183C"
+    ],
+    "from": "YOL017W"
+  },
+  {
+    "to": [
+      "YBR089C-A",
+      "YDR403W"
+    ],
+    "from": "YGL204C"
+  },
+  {
+    "to": ["YKL145W"],
+    "from": "YPR108W"
+  },
+  {
+    "to": ["YCR064C"],
+    "from": "YDL054C"
+  },
+  {
+    "to": ["YBR092C"],
+    "from": "YDR033W"
+  },
+  {
+    "to": [
+      "YHL050C",
+      "YIL177C",
+      "YLL066C",
+      "YLR463C"
+    ],
+    "from": "YLR467W"
+  },
+  {
+    "to": [
+      "YIL035C",
+      "YJL148W",
+      "YKL172W"
+    ],
+    "from": "YMR269W"
+  },
+  {
+    "to": [
+      "YFL053W",
+      "YGL259W",
+      "YHR096C"
+    ],
+    "from": "YJL214W"
+  },
+  {
+    "to": [
+      "YKL120W",
+      "YLL027W"
+    ],
+    "from": "YOL088C"
+  },
+  {
+    "to": [
+      "YER095W",
+      "YGR189C",
+      "YLL022C",
+      "YNL262W",
+      "YOL007C",
+      "YOL017W"
+    ],
+    "from": "YOL019W"
+  },
+  {
+    "to": ["YKL075C"],
+    "from": "YMR030W"
+  },
+  {
+    "to": [
+      "YLR441C",
+      "YML015C",
+      "YML063W",
+      "YMR128W",
+      "YNL001W"
+    ],
+    "from": "YOR182C"
+  },
+  {
+    "to": [
+      "YBR283C",
+      "YBR287W",
+      "YCLX12W",
+      "YDL054C",
+      "YFL039C",
+      "YGL010W"
+    ],
+    "from": "YGL202W"
+  },
+  {
+    "to": [
+      "YLR081W",
+      "YLR406C",
+      "YNL184C"
+    ],
+    "from": "YOR243C"
+  },
+  {
+    "to": [
+      "YCL052C",
+      "YCR046C",
+      "YDR054C",
+      "YHR200W",
+      "YJR049C",
+      "YMR108W"
+    ],
+    "from": "YMR267W"
+  },
+  {
+    "to": [
+      "YLR221C",
+      "YLR449W"
+    ],
+    "from": "YOL106W"
+  },
+  {
+    "to": ["YDR113C"],
+    "from": "YDR224C"
+  },
+  {
+    "to": [
+      "YJL104W",
+      "YJL167W",
+      "YJL180C",
+      "YKL003C",
+      "YKL142W",
+      "YKL195W"
+    ],
+    "from": "YMR286W"
+  },
+  {
+    "to": [
+      "YGR190C",
+      "YJR129C",
+      "YKL056C"
+    ],
+    "from": "YLR339C"
+  },
+  {
+    "to": [
+      "YER006W",
+      "YER156C",
+      "YFL002C"
+    ],
+    "from": "YGR103W"
+  },
+  {
+    "to": ["YBR098W"],
+    "from": "YDR076W"
+  },
+  {
+    "to": [
+      "YEL077C",
+      "YER190W",
+      "YHL049C"
+    ],
+    "from": "YHR218W"
+  },
+  {
+    "to": [
+      "YER190W",
+      "YHL049C",
+      "YHR218W",
+      "YLL066C"
+    ],
+    "from": "YLR462W"
+  },
+  {
+    "to": [
+      "YBR250W",
+      "YDR114C"
+    ],
+    "from": "YLR406C"
+  },
+  {
+    "to": ["YDL248W"],
+    "from": "YDR107C"
+  },
+  {
+    "to": [
+      "YHL050C",
+      "YLL066C"
+    ],
+    "from": "YLR463C"
+  },
+  {
+    "to": [
+      "YGR186W",
+      "YJR050W",
+      "YKL028W"
+    ],
+    "from": "YKR016W"
+  },
+  {
+    "to": ["YDR184C"],
+    "from": "YGR123C"
+  },
+  {
+    "to": ["YPR174C"],
+    "from": "YPR175W"
+  },
+  {
+    "to": ["YGL090W"],
+    "from": "YJR004C"
+  },
+  {
+    "to": [
+      "YIL177C",
+      "YLL066C",
+      "YLR466W",
+      "YLR467W",
+      "YNL339C"
+    ],
+    "from": "YPR203W"
+  },
+  {
+    "to": [
+      "YBR092C",
+      "YJL079C",
+      "YLR297W"
+    ],
+    "from": "YNL058C"
+  },
+  {
+    "to": ["YMR042W"],
+    "from": "YPR156C"
+  },
+  {
+    "to": ["YCL022C"],
+    "from": "YCL024W"
+  },
+  {
+    "to": [
+      "YDR163W",
+      "YIR004W",
+      "YJL179W",
+      "YJR014W",
+      "YOL139C"
+    ],
+    "from": "YPL225W"
+  },
+  {
+    "to": ["YER190W"],
+    "from": "YLR464W"
+  },
+  {
+    "to": [
+      "YHL050C",
+      "YIL177C",
+      "YLL066C",
+      "YLR463C",
+      "YLR467W",
+      "YNL339C",
+      "YPR203W"
+    ],
+    "from": "YPR204W"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YGR285C"
+    ],
+    "from": "YIL161W"
+  },
+  {
+    "to": [
+      "YFL041W",
+      "YGL010W",
+      "YGL186C",
+      "YGL202W",
+      "YJL094C"
+    ],
+    "from": "YKR097W"
+  },
+  {
+    "to": [
+      "YCL054W",
+      "YDR496C",
+      "YGL099W"
+    ],
+    "from": "YGL171W"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YGR145W",
+      "YJL033W"
+    ],
+    "from": "YJR002W"
+  },
+  {
+    "to": [
+      "YDL245C",
+      "YDR107C",
+      "YEL035C",
+      "YFL039C",
+      "YFL041W"
+    ],
+    "from": "YFR020W"
+  },
+  {
+    "to": [
+      "YLR257W",
+      "YMR005W",
+      "YOR132W"
+    ],
+    "from": "YOR184W"
+  },
+  {
+    "to": ["YOL143C"],
+    "from": "YOR163W"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YER156C",
+      "YGR103W"
+    ],
+    "from": "YGR128C"
+  },
+  {
+    "to": [
+      "YKL027W",
+      "YKL216W",
+      "YLL011W",
+      "YLL034C",
+      "YLR276C"
+    ],
+    "from": "YMR300C"
+  },
+  {
+    "to": [
+      "YDR087C",
+      "YJL014W",
+      "YJL033W",
+      "YJL148W",
+      "YLR197W",
+      "YLR221C",
+      "YLR276C",
+      "YLR449W"
+    ],
+    "from": "YOL041C"
+  },
+  {
+    "to": [
+      "YCR047C",
+      "YCR051W",
+      "YDR449C",
+      "YER049W",
+      "YER156C",
+      "YGR103W",
+      "YGR128C",
+      "YIL127C",
+      "YJL033W",
+      "YJL125C",
+      "YKL024C",
+      "YLR009W",
+      "YLR138W",
+      "YLR175W",
+      "YLR397C",
+      "YOL077C",
+      "YOL079W",
+      "YOR169C",
+      "YOR261C"
+    ],
+    "from": "YOR277C"
+  },
+  {
+    "to": ["YMR296C"],
+    "from": "YNL231C"
+  },
+  {
+    "to": [
+      "YGL008C",
+      "YGL114W",
+      "YIL172C"
+    ],
+    "from": "YPL036W"
+  },
+  {
+    "to": ["YGL221C"],
+    "from": "YKL150W"
+  },
+  {
+    "to": ["YBR178W"],
+    "from": "YFL055W"
+  },
+  {
+    "to": ["YCL024W"],
+    "from": "YGR044C"
+  },
+  {
+    "to": [
+      "YBR178W",
+      "YBR186W"
+    ],
+    "from": "YOR009W"
+  },
+  {
+    "to": [
+      "YKL195W",
+      "YKR035C"
+    ],
+    "from": "YLR262C"
+  },
+  {
+    "to": [
+      "YJL157C",
+      "YJR004C"
+    ],
+    "from": "YKL177W"
+  },
+  {
+    "to": ["YJL008C"],
+    "from": "YMR038C"
+  },
+  {
+    "to": [
+      "YIR004W",
+      "YJR050W"
+    ],
+    "from": "YNL097C"
+  },
+  {
+    "to": ["YMR038C"],
+    "from": "YPL049C"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YIL084C",
+      "YJL033W",
+      "YJR029W",
+      "YLL034C",
+      "YLR104W",
+      "YLR350W"
+    ],
+    "from": "YNL163C"
+  },
+  {
+    "to": ["YCL024W"],
+    "from": "YDL003W"
+  },
+  {
+    "to": [
+      "YFL038C",
+      "YGL106W",
+      "YGR167W",
+      "YIL010W",
+      "YJL104W",
+      "YKL117W",
+      "YKL145W",
+      "YKL195W"
+    ],
+    "from": "YKR035C"
+  },
+  {
+    "to": [
+      "YGR189C",
+      "YLR183C",
+      "YLR212C"
+    ],
+    "from": "YNL262W"
+  },
+  {
+    "to": [
+      "YJL175W",
+      "YKR008W"
+    ],
+    "from": "YLR225C"
+  },
+  {
+    "to": ["YLR062C"],
+    "from": "YOR394W"
+  },
+  {
+    "to": [
+      "YGL048C",
+      "YGR167W",
+      "YIL010W"
+    ],
+    "from": "YKL142W"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YER049W",
+      "YFL002C",
+      "YGR103W",
+      "YGR128C",
+      "YGR285C",
+      "YIL084C",
+      "YIL127C",
+      "YJL033W",
+      "YKL024C",
+      "YKR072C",
+      "YLR009W"
+    ],
+    "from": "YLR175W"
+  },
+  {
+    "to": [
+      "YDR113C",
+      "YDR224C"
+    ],
+    "from": "YDR225W"
+  },
+  {
+    "to": [
+      "YGR189C",
+      "YJR148W"
+    ],
+    "from": "YKR013W"
+  },
+  {
+    "to": ["YHR174W"],
+    "from": "YJR009C"
+  },
+  {
+    "to": [
+      "YHR218W",
+      "YKL163W"
+    ],
+    "from": "YKL164C"
+  },
+  {
+    "to": ["YJR004C"],
+    "from": "YKL163W"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGR103W",
+      "YGR128C"
+    ],
+    "from": "YKR072C"
+  },
+  {
+    "to": [
+      "YGL171W",
+      "YLR197W"
+    ],
+    "from": "YPL029W"
+  },
+  {
+    "to": ["YIL063C"],
+    "from": "YKL122C"
+  },
+  {
+    "to": [
+      "YIR003W",
+      "YKL172W",
+      "YML074C"
+    ],
+    "from": "YMR005W"
+  },
+  {
+    "to": [
+      "YDR365C",
+      "YGL171W",
+      "YNL110C",
+      "YOL041C",
+      "YPL029W",
+      "YPL044C"
+    ],
+    "from": "YPL146C"
+  },
+  {
+    "to": ["YKR097W"],
+    "from": "YPL166W"
+  },
+  {
+    "to": ["YER099C"],
+    "from": "YLR226W"
+  },
+  {
+    "to": [
+      "YLR340W",
+      "YLR403W",
+      "YMR116C"
+    ],
+    "from": "YPR074C"
+  },
+  {
+    "to": [
+      "YEL076C",
+      "YEL077C",
+      "YER190W"
+    ],
+    "from": "YHL049C"
+  },
+  {
+    "to": [
+      "YKL051W",
+      "YKL052C",
+      "YKL077W",
+      "YKR043C",
+      "YLL034C",
+      "YLL037W",
+      "YLR114C",
+      "YLR328W",
+      "YML005W",
+      "YNL163C",
+      "YNL261W",
+      "YOL035C",
+      "YOR300W",
+      "YOR332W"
+    ],
+    "from": "YPL048W"
+  },
+  {
+    "to": ["YKL082C"],
+    "from": "YNL110C"
+  },
+  {
+    "to": ["YHR019C"],
+    "from": "YLR116W"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGR128C",
+      "YGR265W",
+      "YLR009W",
+      "YLR138W"
+    ],
+    "from": "YLR397C"
+  },
+  {
+    "to": [
+      "YDR087C",
+      "YDR429C"
+    ],
+    "from": "YER148W"
+  },
+  {
+    "to": [
+      "YHL049C",
+      "YHR218W"
+    ],
+    "from": "YKR077W"
+  },
+  {
+    "to": [
+      "YCR056W",
+      "YDR449C",
+      "YEL062W",
+      "YER109C",
+      "YIL150C",
+      "YJR029W",
+      "YKL027W",
+      "YKL029C",
+      "YKL051W",
+      "YKL077W",
+      "YKR043C",
+      "YLL011W"
+    ],
+    "from": "YLL034C"
+  },
+  {
+    "to": [
+      "YDR429C",
+      "YGL105W",
+      "YGR186W",
+      "YIR004W",
+      "YJR014W"
+    ],
+    "from": "YJR050W"
+  },
+  {
+    "to": [
+      "YER095W",
+      "YIL140W",
+      "YLR121C",
+      "YML027W",
+      "YNL262W",
+      "YOL007C",
+      "YOL019W",
+      "YOR114W"
+    ],
+    "from": "YPL256C"
+  },
+  {
+    "to": [
+      "YJL063C",
+      "YKL169C"
+    ],
+    "from": "YLR069C"
+  },
+  {
+    "to": ["YHL001W"],
+    "from": "YNL289W"
+  },
+  {
+    "to": [
+      "YKR059W",
+      "YLR048W",
+      "YNL101W"
+    ],
+    "from": "YPL142C"
+  },
+  {
+    "to": ["YDL088C"],
+    "from": "YGL049C"
+  },
+  {
+    "to": [
+      "YCL024W",
+      "YCL060C",
+      "YDL003W",
+      "YDR097C",
+      "YJL074C"
+    ],
+    "from": "YKL045W"
+  },
+  {
+    "to": ["YJL173C"],
+    "from": "YKL046C"
+  },
+  {
+    "to": [
+      "YDR365C",
+      "YGL078C",
+      "YGL171W",
+      "YHR196W",
+      "YNR003C",
+      "YPL029W"
+    ],
+    "from": "YPL044C"
+  },
+  {
+    "to": [
+      "YER109C",
+      "YJR029W"
+    ],
+    "from": "YNL207W"
+  },
+  {
+    "to": [
+      "YER029C",
+      "YHR201C",
+      "YIL010W",
+      "YJL008C",
+      "YKL117W"
+    ],
+    "from": "YKL145W"
+  },
+  {
+    "to": [
+      "YIR008C",
+      "YKL122C"
+    ],
+    "from": "YLR154C"
+  },
+  {
+    "to": [
+      "YCLX12W",
+      "YDR455C",
+      "YFL041W",
+      "YGL249W",
+      "YHR151C",
+      "YIL006W",
+      "YIR019C",
+      "YJL094C",
+      "YKR097W"
+    ],
+    "from": "YNL319W"
+  },
+  {
+    "to": [
+      "YDL043C",
+      "YGL164C"
+    ],
+    "from": "YIL035C"
+  },
+  {
+    "to": [
+      "YBR207W",
+      "YBR234C",
+      "YBR283C"
+    ],
+    "from": "YBR287W"
+  },
+  {
+    "to": [
+      "YNL262W",
+      "YOL007C",
+      "YOL019W"
+    ],
+    "from": "YOR114W"
+  },
+  {
+    "to": [
+      "YIL039W",
+      "YKL051W",
+      "YKR043C",
+      "YLL034C"
+    ],
+    "from": "YLL037W"
+  },
+  {
+    "to": [
+      "YDR228C",
+      "YDR449C",
+      "YFL002C",
+      "YGL120C",
+      "YGR103W",
+      "YGR128C",
+      "YGR145W",
+      "YGR285C",
+      "YHR069C",
+      "YIL079C",
+      "YIL127C"
+    ],
+    "from": "YJL033W"
+  },
+  {
+    "to": [
+      "YGL197W",
+      "YLR213C",
+      "YOR071C"
+    ],
+    "from": "YPL041C"
+  },
+  {
+    "to": [
+      "YGL120C",
+      "YGR145W",
+      "YIL079C",
+      "YJL033W",
+      "YKL027W"
+    ],
+    "from": "YKL216W"
+  },
+  {
+    "to": ["YGL251C"],
+    "from": "YMR169C"
+  },
+  {
+    "to": [
+      "YJL180C",
+      "YKL195W",
+      "YMR286W"
+    ],
+    "from": "YOR158W"
+  },
+  {
+    "to": ["YPL256C"],
+    "from": "YPR106W"
+  },
+  {
+    "to": [
+      "YJR002W",
+      "YKR072C",
+      "YLR009W",
+      "YLR138W",
+      "YLR186W",
+      "YOL077C",
+      "YOL079W"
+    ],
+    "from": "YOL080C"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YFL002C",
+      "YGL099W",
+      "YGL171W",
+      "YGR103W",
+      "YGR128C",
+      "YGR285C",
+      "YIL127C",
+      "YIL161W",
+      "YJL033W",
+      "YJR002W",
+      "YKR072C",
+      "YLR175W"
+    ],
+    "from": "YLR197W"
+  },
+  {
+    "to": [
+      "YDL116W",
+      "YGL049C",
+      "YIL084C"
+    ],
+    "from": "YIR023W"
+  },
+  {
+    "to": [
+      "YDR054C",
+      "YDR056C",
+      "YGR173W",
+      "YMR005W",
+      "YMR044W",
+      "YMR213W",
+      "YOR154W",
+      "YOR374W"
+    ],
+    "from": "YPR125W"
+  },
+  {
+    "to": ["YJL200C"],
+    "from": "YML006C"
+  },
+  {
+    "to": [
+      "YLL026W",
+      "YLR216C"
+    ],
+    "from": "YMR186W"
+  },
+  {
+    "to": [
+      "YFL041W",
+      "YFR020W",
+      "YLR406C"
+    ],
+    "from": "YNL184C"
+  },
+  {
+    "to": ["YIL172C"],
+    "from": "YKR059W"
+  },
+  {
+    "to": [
+      "YER148W",
+      "YGR173W",
+      "YGR195W"
+    ],
+    "from": "YJL148W"
+  },
+  {
+    "to": [
+      "YDR113C",
+      "YDR224C",
+      "YDR225W",
+      "YNL030W"
+    ],
+    "from": "YNL031C"
+  },
+  {
+    "to": [
+      "YJR054W",
+      "YMR186W",
+      "YNL007C"
+    ],
+    "from": "YPR124W"
+  },
+  {
+    "to": [
+      "YDR113C",
+      "YDR224C",
+      "YDR225W"
+    ],
+    "from": "YNL030W"
+  },
+  {
+    "to": ["YLL037W"],
+    "from": "YLR114C"
+  },
+  {
+    "to": [
+      "YDL001W",
+      "YDR396W",
+      "YGL105W"
+    ],
+    "from": "YIR004W"
+  },
+  {
+    "to": [
+      "YGR173W",
+      "YJL148W",
+      "YKL172W",
+      "YLR449W",
+      "YML074C",
+      "YMR005W"
+    ],
+    "from": "YPL273W"
+  },
+  {
+    "to": [
+      "YDR054C",
+      "YER099C",
+      "YLL018C"
+    ],
+    "from": "YMR165C"
+  },
+  {
+    "to": [
+      "YGR002C",
+      "YGR136W"
+    ],
+    "from": "YML004C"
+  },
+  {
+    "to": ["YER006W"],
+    "from": "YFL002C"
+  },
+  {
+    "to": [
+      "YEL076C-A",
+      "YEL077C"
+    ],
+    "from": "YER190W"
+  },
+  {
+    "to": [
+      "YGL102C",
+      "YGR265W"
+    ],
+    "from": "YIL039W"
+  },
+  {
+    "to": [
+      "YCL052C",
+      "YCR046C",
+      "YGL048C",
+      "YHR027C",
+      "YHR200W",
+      "YJR049C",
+      "YLR038C",
+      "YMR267W",
+      "YOR232W"
+    ],
+    "from": "YPR103W"
+  },
+  {
+    "to": [
+      "YER148W",
+      "YFR037C",
+      "YGR114C",
+      "YJL148W",
+      "YKL172W"
+    ],
+    "from": "YLR221C"
+  },
+  {
+    "to": [
+      "YKL056C",
+      "YLR339C"
+    ],
+    "from": "YOR133W"
+  },
+  {
+    "to": [
+      "YLR441C",
+      "YOR182C"
+    ],
+    "from": "YPR102C"
+  },
+  {
+    "to": ["YJR014W"],
+    "from": "YOL139C"
+  },
+  {
+    "to": ["YFL011W"],
+    "from": "YHR096C"
+  },
+  {
+    "to": [
+      "YDR056C",
+      "YDR217C",
+      "YMR005W",
+      "YOR110W"
+    ],
+    "from": "YOR132W"
+  },
+  {
+    "to": [
+      "YJL178C",
+      "YKR043C",
+      "YLL011W"
+    ],
+    "from": "YML005W"
+  },
+  {
+    "to": [
+      "YGL050W",
+      "YGR173W",
+      "YNL110C"
+    ],
+    "from": "YPL160W"
+  },
+  {
+    "to": [
+      "YIL063C",
+      "YJR043C",
+      "YKL172W",
+      "YLR221C",
+      "YLR330W",
+      "YLR449W"
+    ],
+    "from": "YML074C"
+  },
+  {
+    "to": ["YIL036W"],
+    "from": "YJL008C"
+  },
+  {
+    "to": [
+      "YJL076W",
+      "YJL125C",
+      "YKL078W",
+      "YLR009W"
+    ],
+    "from": "YLR138W"
+  },
+  {
+    "to": ["YKR043C"],
+    "from": "YLR062C"
+  },
+  {
+    "to": [
+      "YDR184C",
+      "YGR123C"
+    ],
+    "from": "YLL011W"
+  },
+  {
+    "to": [
+      "YKL082C",
+      "YNL110C"
+    ],
+    "from": "YOR051C"
+  },
+  {
+    "to": ["YNL231C"],
+    "from": "YOR110W"
+  },
+  {
+    "to": [
+      "YER038C",
+      "YJL136C"
+    ],
+    "from": "YOR234C"
+  },
+  {
+    "to": [
+      "YGR151C",
+      "YGR152C"
+    ],
+    "from": "YJR148W"
+  },
+  {
+    "to": [
+      "YJL008C",
+      "YKL145W",
+      "YKR016W"
+    ],
+    "from": "YLR321C"
+  },
+  {
+    "to": [
+      "YER190W",
+      "YHL050C",
+      "YIL177C"
+    ],
+    "from": "YLL066C"
+  },
+  {
+    "to": [
+      "YKL078W",
+      "YLR009W",
+      "YLR138W"
+    ],
+    "from": "YOL079W"
+  },
+  {
+    "to": [
+      "YCL022C",
+      "YCL024W",
+      "YDL003W",
+      "YDR097C"
+    ],
+    "from": "YJL115W"
+  },
+  {
+    "to": ["YFL002C"],
+    "from": "YJL014W"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YKL216W",
+      "YKR047W",
+      "YLL011W",
+      "YLR276C",
+      "YMR300C"
+    ],
+    "from": "YNR046W"
+  },
+  {
+    "to": [
+      "YKR043C",
+      "YLR276C",
+      "YMR080C",
+      "YMR300C",
+      "YNL261W"
+    ],
+    "from": "YPL105C"
+  },
+  {
+    "to": [
+      "YFL002C",
+      "YJL033W",
+      "YJR090C",
+      "YKL032C",
+      "YML008C",
+      "YMR128W"
+    ],
+    "from": "YNL027W"
+  },
+  {
+    "to": ["YKL078W"],
+    "from": "YPL126W"
+  },
+  {
+    "to": [
+      "YKL024C",
+      "YLL027W",
+      "YLR104W",
+      "YLR350W",
+      "YNL163C",
+      "YOR261C",
+      "YOR328W",
+      "YOR330C",
+      "YPL266W"
+    ],
+    "from": "YPR033C"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGL120C",
+      "YGR103W",
+      "YGR128C",
+      "YGR285C",
+      "YIL127C",
+      "YIL161W",
+      "YJL033W",
+      "YJR002W",
+      "YKR072C",
+      "YLR009W",
+      "YLR175W",
+      "YLR197W",
+      "YLR276C",
+      "YLR449W",
+      "YML063W",
+      "YMR128W"
+    ],
+    "from": "YOL077C"
+  },
+  {
+    "to": ["YLR083C"],
+    "from": "YLR459W"
+  },
+  {
+    "to": [
+      "YJR004C",
+      "YKL177W",
+      "YLR452C"
+    ],
+    "from": "YNR044W"
+  },
+  {
+    "to": [
+      "YDR224C",
+      "YDR225W",
+      "YKL048C",
+      "YNL031C"
+    ],
+    "from": "YPL127C"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YKL144C",
+      "YLR009W"
+    ],
+    "from": "YMR102C"
+  },
+  {
+    "to": [
+      "YDR046C",
+      "YIR019C",
+      "YJL094C",
+      "YNL319W",
+      "YOR009W"
+    ],
+    "from": "YOR237W"
+  },
+  {
+    "to": [
+      "YJL053W",
+      "YLR051C",
+      "YOR051C"
+    ],
+    "from": "YPR148C"
+  },
+  {
+    "to": ["YER189W"],
+    "from": "YFL064C"
+  },
+  {
+    "to": ["YIL133C"],
+    "from": "YKL006W"
+  },
+  {
+    "to": ["YIL006W"],
+    "from": "YOR071C"
+  },
+  {
+    "to": [
+      "YJL148W",
+      "YKL172W",
+      "YLR276C",
+      "YLR449W",
+      "YMR269W"
+    ],
+    "from": "YNL001W"
+  },
+  {
+    "to": [
+      "YER095W",
+      "YGR189C",
+      "YIL140W",
+      "YKR013W",
+      "YLL002W",
+      "YML027W",
+      "YNL262W"
+    ],
+    "from": "YOL007C"
+  },
+  {
+    "to": ["YER029C"],
+    "from": "YHR201C"
+  },
+  {
+    "to": [
+      "YGR123C",
+      "YHR088W",
+      "YLL011W"
+    ],
+    "from": "YLR015W"
+  },
+  {
+    "to": [
+      "YLR257W",
+      "YMR005W",
+      "YOR132W",
+      "YOR184W",
+      "YPL117C"
+    ],
+    "from": "YPR036W"
+  },
+  {
+    "to": ["YKR077W"],
+    "from": "YOR018W"
+  },
+  {
+    "to": [
+      "YLR114C",
+      "YMR276W",
+      "YOR106W"
+    ],
+    "from": "YPR037C"
+  },
+  {
+    "to": ["YIL063C"],
+    "from": "YJL165C"
+  },
+  {
+    "to": [
+      "YDR163W",
+      "YEL051W",
+      "YFL038C",
+      "YGL105W"
+    ],
+    "from": "YGL106W"
+  },
+  {
+    "to": ["YBR180W"],
+    "from": "YDR046C"
+  },
+  {
+    "to": ["YHR069C"],
+    "from": "YLL008W"
+  },
+  {
+    "to": [
+      "YJL010C",
+      "YLR401C"
+    ],
+    "from": "YNL248C"
+  },
+  {
+    "to": ["YFL053W"],
+    "from": "YFL061W"
+  },
+  {
+    "to": [
+      "YKL142W",
+      "YLL009C"
+    ],
+    "from": "YLR038C"
+  },
+  {
+    "to": [
+      "YGR167W",
+      "YJL104W",
+      "YKL003C",
+      "YKL142W",
+      "YKL195W",
+      "YKR035C",
+      "YLR038C",
+      "YMR286W",
+      "YNL315C",
+      "YOR042W"
+    ],
+    "from": "YOR232W"
+  },
+  {
+    "to": [
+      "YDL001W",
+      "YDR071C",
+      "YDR163W",
+      "YDR429C",
+      "YEL051W",
+      "YER002W",
+      "YFL038C"
+    ],
+    "from": "YGL105W"
+  },
+  {
+    "to": [
+      "YDR493W",
+      "YER050C"
+    ],
+    "from": "YGR220C"
+  },
+  {
+    "to": ["YKR077W"],
+    "from": "YLL067C"
+  },
+  {
+    "to": [
+      "YKL201C",
+      "YLL049W"
+    ],
+    "from": "YLR341W"
+  },
+  {
+    "to": [
+      "YKL074C",
+      "YLR007W",
+      "YNL001W",
+      "YNL163C",
+      "YOL077C",
+      "YOL106W"
+    ],
+    "from": "YOR328W"
+  },
+  {
+    "to": [
+      "YJL063C",
+      "YKL167C"
+    ],
+    "from": "YKL169C"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YGR145W",
+      "YIL127C",
+      "YIL161W",
+      "YJL033W",
+      "YJR002W",
+      "YLR009W",
+      "YLR175W",
+      "YLR197W",
+      "YLR400W",
+      "YMR102C"
+    ],
+    "from": "YMR128W"
+  },
+  {
+    "to": ["YNL132W"],
+    "from": "YPR144C"
+  },
+  {
+    "to": ["YCL048W"],
+    "from": "YGR039W"
+  },
+  {
+    "to": [
+      "YGR220C",
+      "YJL063C"
+    ],
+    "from": "YOR215C"
+  },
+  {
+    "to": ["YLR406C"],
+    "from": "YPR164W"
+  },
+  {
+    "to": [
+      "YIL039W",
+      "YJR029W",
+      "YKR043C",
+      "YLR024C"
+    ],
+    "from": "YLR328W"
+  },
+  {
+    "to": [
+      "YDR071C",
+      "YDR396W",
+      "YDR429C",
+      "YER002W",
+      "YER148W",
+      "YGL095C",
+      "YGL105W",
+      "YIR004W",
+      "YJL179W"
+    ],
+    "from": "YJR014W"
+  },
+  {
+    "to": [
+      "YFL041W",
+      "YGL197W",
+      "YOR243C"
+    ],
+    "from": "YPL258C"
+  },
+  {
+    "to": [
+      "YJL035C",
+      "YKL120W",
+      "YLL027W"
+    ],
+    "from": "YOL056W"
+  },
+  {
+    "to": [
+      "YDR054C",
+      "YKL079W"
+    ],
+    "from": "YMR213W"
+  },
+  {
+    "to": [
+      "YGL050W",
+      "YGR173W",
+      "YLR420W",
+      "YMR038C"
+    ],
+    "from": "YPL002C"
+  },
+  {
+    "to": ["YMR186W"],
+    "from": "YNL007C"
+  },
+  {
+    "to": [
+      "YJL157C",
+      "YKL177W"
+    ],
+    "from": "YLR452C"
+  },
+  {
+    "to": [
+      "YGR128C",
+      "YIL039W",
+      "YKR043C",
+      "YKR072C",
+      "YLL037W",
+      "YLR062C",
+      "YLR344W",
+      "YLR350W",
+      "YMR300C",
+      "YNL163C",
+      "YNL261W"
+    ],
+    "from": "YOR300W"
+  },
+  {
+    "to": [
+      "YDL056W",
+      "YDR482C",
+      "YER119C",
+      "YGL202W"
+    ],
+    "from": "YKL202W"
+  },
+  {
+    "to": ["YDR428C"],
+    "from": "YLR251W"
+  },
+  {
+    "to": [
+      "YLR105C",
+      "YLR154C"
+    ],
+    "from": "YMR214W"
+  },
+  {
+    "to": [
+      "YER156C",
+      "YGR103W",
+      "YGR128C",
+      "YJL033W",
+      "YJL125C",
+      "YJR002W",
+      "YKL024C",
+      "YKR072C"
+    ],
+    "from": "YLR009W"
+  },
+  {
+    "to": [
+      "YCL019W",
+      "YCL021W",
+      "YHR145C"
+    ],
+    "from": "YIL060W"
+  },
+  {
+    "to": [
+      "YFL039C",
+      "YKR059W",
+      "YNL101W"
+    ],
+    "from": "YPR147C"
+  },
+  {
+    "to": ["YDR396W"],
+    "from": "YGL095C"
+  },
+  {
+    "to": [
+      "YDR459C",
+      "YGL008C",
+      "YGL084C",
+      "YKR059W",
+      "YLR242C"
+    ],
+    "from": "YML106W"
+  },
+  {
+    "to": [
+      "YDR429C",
+      "YGL105W"
+    ],
+    "from": "YGR114C"
+  },
+  {
+    "to": [
+      "YBR243C",
+      "YJL118W"
+    ],
+    "from": "YOR324C"
+  },
+  {
+    "to": [
+      "YFL041W",
+      "YGR256W"
+    ],
+    "from": "YHR151C"
+  },
+  {
+    "to": ["YER148W"],
+    "from": "YFR037C"
+  },
+  {
+    "to": ["YGR145W"],
+    "from": "YKL027W"
+  },
+  {
+    "to": ["YLR138W"],
+    "from": "YML037C"
+  },
+  {
+    "to": ["YFL041W"],
+    "from": "YOR286W"
+  },
+  {
+    "to": ["YPL029W"],
+    "from": "YPR169W"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YGR145W",
+      "YIL127C",
+      "YJL014W",
+      "YJL033W",
+      "YJL035C",
+      "YJR002W",
+      "YLR009W",
+      "YLR197W",
+      "YLR276C",
+      "YLR449W",
+      "YMR128W",
+      "YOL041C",
+      "YOL080C",
+      "YOR206W"
+    ],
+    "from": "YPR142C"
+  },
+  {
+    "to": [
+      "YGR103W",
+      "YGR285C",
+      "YJL125C"
+    ],
+    "from": "YKL024C"
+  },
+  {
+    "to": [
+      "YEL027W",
+      "YFL039C"
+    ],
+    "from": "YFL041W"
+  },
+  {
+    "to": [
+      "YGL120C",
+      "YGR128C",
+      "YGR195W",
+      "YIL127C",
+      "YJL033W",
+      "YJL148W",
+      "YJR002W",
+      "YKL027W",
+      "YKR072C",
+      "YLR197W"
+    ],
+    "from": "YLR276C"
+  },
+  {
+    "to": ["YJR043C"],
+    "from": "YNL309W"
+  },
+  {
+    "to": [
+      "YDR449C",
+      "YER006W",
+      "YER156C",
+      "YFL002C",
+      "YGR103W",
+      "YGR128C",
+      "YGR285C",
+      "YIL127C",
+      "YJL033W",
+      "YJL125C",
+      "YKL024C",
+      "YKR072C",
+      "YLR009W",
+      "YLR175W",
+      "YLR197W",
+      "YOL077C",
+      "YOR169C"
+    ],
+    "from": "YOR261C"
+  },
+  {
+    "to": [
+      "YBR054W",
+      "YBR092C",
+      "YDR033W"
+    ],
+    "from": "YLR297W"
+  },
+  {
+    "to": ["YJL008C"],
+    "from": "YJR017C"
+  }
+]

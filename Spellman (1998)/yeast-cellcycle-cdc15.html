@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+
+body {
+  font: 10px sans-serif;
+}
+
+.arc path {
+  stroke: #fff;
+}
+
+.Aligner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#rightbox {
+	color: black;
+    width: 320px;
+	height: 500px;
+    border: 0px solid black;
+	padding: 5px;
+	position: absolute;
+	top: 175px;
+	/*left: 125px;*/
+    /*position: absolute;
+    top: 0px;
+    right: 0px;*/
+}
+
+#period {
+	color: black;
+    width: 320px;
+	height: 60px;
+    border: 0px solid black;
+	padding: 5px;
+    /*position: absolute;
+    top: 0px;
+	left: 310px;
+    right: 310px;*/
+}
+
+#period #value, #selected-gene {
+	font-size: 30px;
+	color: blue;
+	display: block;
+}
+
+.anchored {
+	font-size: 16px;
+	color: blue;
+	display: inline-block;
+}
+
+#selected-gene {
+	font-size: 16px;
+	color: blue;
+	display: block;
+}
+
+#overlay{
+  position:fixed;
+  z-index:99999;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  background:rgba(0,0,0,0.9);
+  transition: 1s 0.4s;
+}
+#progress{
+  height:1px;
+  background:#fff;
+  position:absolute;
+  width:0;
+  top:50%;
+  transition: 1s;
+}
+#progstat{
+  font-size:1.5em;
+  letter-spacing: 3px;
+  position:absolute;
+  top:50%;
+  margin-top:-40px;
+  width:100%;
+  text-align:center;
+  color:#fff;
+}
+
+#searchfield { display: block; width: 100%; text-align: center; margin-bottom: 35px; }
+ 
+#searchfield #form {
+  display: inline-block;
+  background: #eeefed;
+  padding: 0;
+  margin: 0;
+  padding: 5px;
+  border-radius: 3px;
+  margin: 5px 0 0 0;
+}
+#searchfield #form .biginput {
+  width: 200px;
+  height: 40px;
+  padding: 0 10px 0 10px;
+  background-color: #fff;
+  border: 1px solid #c8c8c8;
+  border-radius: 3px;
+  color: #aeaeae;
+  font-weight:normal;
+  font-size: 1.5em;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#add-anchor {
+	height: 40px;
+	padding: 0 10px 0 10px;
+	display: inline-block;
+}
+
+#searchfield #form .biginput:focus {
+  color: #858585;
+}
+
+.autocomplete-suggestions { border: 1px solid #999; background: #fff; cursor: default; overflow: auto; }
+.autocomplete-suggestion { padding: 10px 5px; font-size: 1.2em; white-space: nowrap; overflow: hidden; }
+.autocomplete-selected { background: #f0f0f0; }
+.autocomplete-suggestions strong { font-weight: normal; color: #3399ff; }
+</style>
+<body style="width: 1000px;">
+<div id="overlay">
+	<div id="progstat"></div>
+	<div id="progress"></div>
+</div>
+<script src="file:\\\C:\Users\Max\Documents\Projects\Programming\lib\jquery-2.1.1.min\jquery-2.1.1.min.js"></script>
+<script src="file:\\\C:\Users\Max\Documents\Projects\Programming\lib\jquery-autocomplete\jquery.autocomplete.min.js"></script>
+<script src="file:\\\C:\Users\Max\Documents\Projects\Programming\lib\d3.v3.min\d3.v3.min.js"></script>
+<script>
+// http://stackoverflow.com/questions/27177755/sum-of-columns-in-csv-using-d3
+
+$(window).load(function(){
+   // PAGE IS FULLY LOADED  
+   // FADE OUT YOUR OVERLAYING DIV
+   $('#overlay').fadeOut();
+});
+
+var nb_periods = 23;
+
+var total_dna = 0;
+var periods = [];
+for(var i=0; i<23; i++) {
+	periods[i] = ""+ (40+i*10);
+}
+
+var screenWidth = window.innerWidth || document.body.clientWidth;
+
+var width = 600,
+    height = 600,
+    radius = Math.min(width, height) / 2;
+
+var color = d3.scale.ordinal()
+    .range(["#0000AA", "#00FFAA", "#00AA00", "#00AAFF", 
+			"#00AAAA", "#FF00AA", "#FFFFAA", "#FFAA00",
+			"#FFAAFF", "#FFAAAA", "#AA0000", "#AA00FF",
+			"#AA00AA", "#AAFF00", "#AAFFFF", "#AAAAFF"]);
+
+var arc = d3.svg.arc()
+    .outerRadius(radius)
+    .innerRadius(radius - 20)
+	
+var arc_histograms_size = 50;
+var arc_histograms_ir = radius-(25+arc_histograms_size);
+var arc_histograms = d3.svg.arc()
+	.outerRadius(radius-25)
+	.innerRadius(arc_histograms_ir);
+
+var pie = d3.layout.pie()
+    .sort(null)
+    .value(function(d) { return d.dnasize; });
+	
+var cellCyclePeriods;
+
+// http://stackoverflow.com/questions/16770763/mouse-position-in-d3
+// http://stackoverflow.com/questions/20414980/d3-select-by-attribute-value
+// http://stackoverflow.com/questions/20056370/how-to-show-and-hides-nodes-when-you-move-the-mouse-over-a-node-in-d3-javascript
+// http://stackoverflow.com/questions/11043279/d3-equivalent-to-jquery-attribute-selector
+// http://www.ianwootten.co.uk/2014/03/07/scaling-a-linear-domain-to-an-ordinal-range-with-d3/
+// http://stackoverflow.com/questions/1435975/how-can-i-round-down-a-number-in-javascript
+
+var current = -1;
+
+var body = d3.select("body")
+	.on("mousemove", function() {
+		if($("#followmousemove").prop('checked')) {
+			var coordinates = [0, 0];
+			coordinates = d3.mouse(this);
+			var x = coordinates[0];
+			var y = coordinates[1];
+			var cellCyclePeriodScaleTo = d3.scale.linear().domain([0, width]).range([0, nb_periods]);
+			if(x > width)
+				return;
+			var id = Math.floor(cellCyclePeriodScaleTo(x)); // round down	
+			d3.select("#period #value").text(periods[id]);
+			//cellCyclePeriods.style("visibility","hidden");
+			if(current >= 0)
+				cellCyclePeriods[0][current].style = "visibility:hidden";
+			cellCyclePeriods[0][id].style = "visibility:visible";
+			current = id;
+		}
+	});
+	
+var svg = d3.select("body").append("svg")
+    .attr("width", width)
+    .attr("height", height)
+    .append("g")
+    .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+	
+var absolutePosFromChr = {};
+
+var genesCoordinates = {};
+var anchoredGenes = [];
+
+var genePosScaleTo;
+var toAbsolutePos;
+
+var geneExprScaleTo = d3.scale.linear().domain([0,3]).range([0,50]);
+
+/****************************** GENOME STRUCTURE *************************************/
+
+// Display chromosome regions as a donut			
+d3.csv("data.csv", function(error, data) {
+		
+	for(var i=0; i<data.length; i++) {
+		var tmp = 0;
+		for(var j=0; j<i; j++)
+			tmp += parseInt(data[j].dnasize);
+		absolutePosFromChr[i] = tmp;
+	}
+	
+	total_dna = d3.sum(data, function(d){ return d.dnasize });
+	genePosScaleTo = d3.scale.linear().domain([0, total_dna]).range([0, 2*Math.PI]);
+	toAbsolutePos = function(c,p) {
+		return genePosScaleTo(absolutePosFromChr[c-1]+parseInt(p)); // Forget to parseInt p --> Lead to complete wrong results
+	};
+	
+	// Display chromosomes
+	var g = svg.selectAll(".arc")
+		.data(pie(data))
+		.enter().append("g")
+		.attr("class", "arc");
+
+	g.append("path")
+		.attr("d", arc)
+		.style("fill", function(d) { return color(d.data.chromosome); });
+
+	g.append("text")
+		.attr("transform", function(d) { return "translate(" + arc.centroid(d) + ")"; })
+		.attr("dy", ".35em")
+		.style("text-anchor", "middle")
+		.text(function(d) { return d.data.chromosome; });
+	
+	// Display histogram chart
+	var g2 = svg.selectAll(".arc_histograms")
+		.data(pie(data))
+		.enter().append("g")
+		.attr("class", "arc");
+
+	g2.append("path")
+		.attr("d", arc_histograms)
+		.style("fill", function(d) { return "#E0E0E0" });
+	
+	// Display horizontal axis in histogram arc
+	for (i = 0; i < 6; i++) {
+		var vertical_axis = d3.svg.arc()
+					.innerRadius(radius-25-i*10)
+					.outerRadius(radius-25-i*10);
+		var va = svg.selectAll(".vertical_axis")
+					.data(pie(data))
+					.enter().append("g")
+					.attr("class", "arc");
+
+		if(i==5)
+			va.append("path").attr("d", vertical_axis)
+					.style("stroke", function(d) { return "#E0E0E0" });
+		else
+			va.append("path").attr("d", vertical_axis)
+					.style("stroke", function(d) { return "white" });
+	}
+});		
+
+/****************************** GENE EXPRESSION *************************************/
+
+// Display gene expression
+d3.csv("Spellman_new.csv", function(error, spellman) {
+
+	var r = arc_histograms_ir-1;
+		
+	// Save coordinates of all genes
+	var geneCoordinates = function(d) {
+		var angle = arc.startAngle()(d);
+		var x = r*Math.sin(angle);
+		var y = r*Math.cos(angle)*-1;
+		return { "x":x,
+				 "y":y,
+			     "angle":angle/Math.PI*180};	
+	}
+		
+	var scaleTo = d3.scale.linear().domain([0, 2*Math.PI]).range([0, 4]);
+		
+	function id(v){ return document.getElementById(v); }
+	var ovrl = id("overlay"),
+    prog = id("progress"),
+    stat = id("progstat");
+	
+	/**
+	*	Draw the expression levels of each genes
+	*/
+	for(var i=0; i<nb_periods; i++) {
+
+		var perc = ((100/nb_periods*i) << 0) +"%";
+		prog.style.width = perc;
+		stat.innerHTML = "Loading "+ perc;
+		
+		/*var filtered = spellman.filter(function(key) { return key == "chr" || key == "startPos"; });
+		console.log(filtered);
+		
+		var ageNames = d3.keys(data[0]).filter(function(key) { return key == "chr" || key == "startPos"; });
+
+		data.forEach(function(d) {
+			d.ages = ageNames.map(function(name) { return {name: name, value: +d[name]}; });
+		});*/
+		
+		var time = 40+i*10;
+		var ccp = svg
+					.append("g")
+					.attr("name","cell-cycle-period")
+					//.attr("id","h"+time)
+					.style("visibility", "hidden");
+							
+		// Arc accessor function
+		var arc = d3.svg.arc()
+					.innerRadius(arc_histograms_ir) 
+					.outerRadius(function(d) { 
+						return arc_histograms_ir+geneExprScaleTo(Math.abs(d[time]));
+					})
+					.startAngle(function(d){ return toAbsolutePos(d.chr,d.startPos) }) 
+					.endAngle(function(d){ return toAbsolutePos(d.chr,d.endPos) });
+						
+		var v = ccp
+					.selectAll(".gene-expression")
+					.data(
+						spellman.filter(function(d){
+							var angle = arc.endAngle()(d)-arc.startAngle()(d);
+							//angles[d.gene] = toAbsolutePos(d.chr,d.startPos);
+							genesCoordinates[d.gene] = geneCoordinates(d); // Save the gene coordinates					
+							return d.chr > 0
+									//&& Math.abs(d[time]) > 0.9
+									&& d.startPos > 0 
+									&& d.endPos > 0 
+									&& d.startPos < d.endPos 
+									&& angle > 0; // Some genes has startPos > endPos : e.g.:YAL065C 
+						})
+					)
+					//.append("g") // Advice 1: https://blog.safaribooksonline.com/2014/02/20/speeding-d3-js-checklist/ --> Renders a lot faster
+					//.attr("class", "arc");
+		v // exit selection
+			.exit()
+			.remove();
+		
+		// http://stackoverflow.com/questions/13595175/updating-svg-element-z-index-with-d3
+		v // enter selection
+			.enter()
+			.append("path")
+			.attr("class","arc")
+			.on("mouseover",function(d) {
+				d3.select("#selected-gene").html("<a href='http://wiki.yeastgenome.org/index.php/"+d.gene+"' target='_blank'>"+d.gene+"</a>");
+				d3.selectAll("#genesCoexprSelection").remove();
+				d3.selectAll("#arcSelection")
+					.style("stroke", function(d){ 
+						if(d[time] < 0) return "red"; else return "green"; 
+					});
+				d3.select(this)
+					.attr("id", "arcSelection")
+					.style("stroke", "orange")
+				d3.selectAll("."+d.gene).each(function() {
+					svg.append("path")
+						.attr("d", this.getAttribute("d"))
+						.attr("id", "genesCoexprSelection")
+						.style("stroke", "orange")
+						.style("fill","none")
+						.style("stroke-width", 1)
+				});
+			})
+			.on("click", function(d) {
+				if(!isInArray(d.gene,anchoredGenes)) {
+					addAnchor(d.gene);
+				} else {
+					removeAnchor(d.gene);
+				}
+			})
+			.attr("d", arc)
+			.style("stroke", function(d){ 
+				if(d[time] < 0) return "red"; else return "green"; 
+			});
+	}
+	cellCyclePeriods = d3.selectAll("[name=cell-cycle-period]");
+});
+
+/****************************** GENE COEXPRESSION *************************************/
+
+var _genesCoexpressed;
+
+// Display coexpression 
+d3.json("cellcycle-coexgenes.json",function(error,genesCoexpressed){
+    if (error) return console.warn(error);
+	
+	_genesCoexpressed = genesCoexpressed;
+		
+	for(var i=0; i<genesCoexpressed.length; i++) {
+		var from = genesCoexpressed[i].from;
+		var to = genesCoexpressed[i].to;
+		for(var j=0; j<to.length; j++) {
+			var lineData = [ 
+							 { "x": genesCoordinates[from].x,   "y": genesCoordinates[from].y},	
+							 { "x": 0,  "y": 0}, 
+							 { "x": genesCoordinates[to[j]].x,  "y": genesCoordinates[to[j]].y}								 							 
+						];
+			var lineFunction = d3.svg.line()
+							 .x(function(d) { return d.x; })
+							 .y(function(d) { return d.y; })
+							 .interpolate("bundle");
+									 
+			//The line SVG Path we draw
+			var lineGraph = svg.append("path")
+								.attr("class","coexpr "+from+" "+to[j])
+								.attr("d", lineFunction(lineData))
+								.attr("stroke", "#F0F0F0") // #F0F0F0
+								.attr("stroke-width", 1)
+								.attr("fill", "none")
+								.style("visibility","visible")
+		}
+	}
+}); 
+
+/****************************** ANCHORS *************************************/
+
+function addAnchor(gene) {
+	gene = gene.split(" ")[0];
+	anchoredGenes.push(gene);
+	d3.selectAll("."+gene).each(function() {
+		svg.append("path")
+			.attr("d", this.getAttribute("d"))
+			.attr("id", "anchoredGene-"+gene)
+			.style("stroke", "orange")
+			.style("fill","none")
+			.style("stroke-width", 1)
+	});
+	printAnchoredGenes();
+}
+
+// http://stackoverflow.com/questions/5767325/remove-specific-element-from-an-array
+function removeAnchor(gene) {
+	gene = gene.split(" ")[0];
+	var index = anchoredGenes.indexOf(gene);
+	if (index > -1)
+		anchoredGenes.splice(index, 1);
+	d3.selectAll("#anchoredGene-"+gene).remove();
+	printAnchoredGenes();
+}
+
+function printAnchoredGenes() {
+	var html = "";
+	for(var i=0; i<anchoredGenes.length; i++) {
+		html += "<div><div style='display: inline-block;' onClick=\"removeAnchor('"+anchoredGenes[i]+"');\">(click here to remove)</div> <div class='anchored'><a href='http://wiki.yeastgenome.org/index.php/"+anchoredGenes[i]+"' target='_blank'>"+anchoredGenes[i]+"</a></div></div>";
+	}
+	d3.select("#anchored-genes").html(html);
+}
+
+function isInArray(value, array) {
+  return array.indexOf(value) > -1;
+}
+
+/****************************** ANIMATION TIMER *************************************/
+var timer;
+
+function startAnimation() {
+	d3.select("#animate").text("Stop");
+	document.getElementById("animate").onclick = function() { stopAnimation(); }
+	timer = setInterval(function(){ yeastCellCycle() }, 1000);
+}
+
+function stopAnimation() {
+	d3.select("#animate").text("Start");
+	document.getElementById("animate").onclick = function() { startAnimation(); }
+	clearTimeout(timer);
+}
+
+var o=0;
+function yeastCellCycle() {
+    if(o == cellCyclePeriods[0].length) 
+		o = 0;
+	cellCyclePeriods.style("visibility","hidden");
+	cellCyclePeriods[0][o].style = "visibility:visible";
+	d3.select("#period #value").text(periods[o]);
+	o++;
+}
+
+// http://designshack.net/articles/javascript/create-a-simple-autocomplete-with-html5-jquery/
+// Display autocompletion coexpressed genes 
+$(function(){
+	var genesCoexpressed = [];
+	var L = _genesCoexpressed.length;
+	for (var i=0; i<L; i++) {
+		genesCoexpressed.push({"value":_genesCoexpressed[i].from + " ("+_genesCoexpressed[i].to.length+")"});
+	}
+  
+  // setup autocomplete function pulling from currencies[] array
+  $('#autocomplete').autocomplete({
+    lookup: genesCoexpressed,
+    onSelect: function (gene) {
+		/*var thehtml = '<strong>Currency Name:</strong> ' + suggestion.value + ' <br> <strong>Symbol:</strong> ' + suggestion.data;
+		$('#outputcontent').html(thehtml);*/
+    }
+  });
+  
+
+});
+
+function showKey(e) {
+	var key;
+	if (window.event) {
+		key = window.event.keyCode;
+	} else {
+	key = e.keyCode;
+	}
+	key = String.fromCharCode(key);
+	if(key == 'F') {
+		console.log($("#followmousemove").prop("checked"));
+		if($("#followmousemove").prop("checked"))
+			$("#followmousemove").prop("checked",false);
+		else
+			$("#followmousemove").prop("checked",true);
+	}
+	console.log(key);
+}
+window.onload = function() {
+	document.onkeydown = showKey;
+}
+</script>
+<div style="position: absolute; top: 0px; left: 650px;">
+	<div id="period" style="padding: 5px;">
+		<fieldset>
+			<legend>Cell cycle</legend>
+			<div>Time (min): <div id="value">0</div></div>
+			<div><input type="checkbox" id="followmousemove">Follow mouse move (Press "F" key to check or uncheck)</div>
+			<div style="margin-top: 5px;">Selected gene: <div id="selected-gene">None</div></div>
+			<div style="margin-top: 5px;"><button id="animate" onClick="startAnimation()">Start</button></div>
+		</fieldset>
+	</div>
+	<div id="rightbox">
+		<fieldset>
+			<legend>Co-expression</legend>
+			<div><div style="border-bottom: 1px solid blue; margin: 5px; margin-left: 10px;  padding: 5px;">Genes anchored <br>(show genes coexpressed with genes listed below)</div> <div id="anchored-genes" style="padding: 5px;">None</div></div>
+			<div id="content">
+			  <div id="searchfield">
+				<div id="form">
+					<input type="text" name="new-anchor-gene" class="biginput" id="autocomplete">
+					<button id="add-anchor" onClick="addAnchor(document.getElementById('autocomplete').value)">add</button>
+				</div>
+			  </div>
+			</div>
+		</fieldset>
+	</div>
+</div>
+</body>
+</html>
